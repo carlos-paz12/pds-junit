@@ -28,4 +28,11 @@ public class CalculadoraTest {
         assertEquals(32, calculadora.multiplicar(8, 4));
     }
 
+    @Test
+    public void deveriaDividir9Para3() {
+        Calculadora calculadora = new Calculadora();
+
+        assertEquals(3, calculadora.dividir(9, 3));
+    }
+
 }
