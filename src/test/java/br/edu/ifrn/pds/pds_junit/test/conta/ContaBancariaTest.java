@@ -24,7 +24,7 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaLancarExcecaoAoDepositar() {
-        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria ().depositar(-20));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria().depositar(-20));
     }
 
     @Test
@@ -59,12 +59,12 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaLancarExcecaoAoSacarValorNegativo() {
-        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria(1000).sacar(-40));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria(1000).sacar(-40));
     }
 
     @Test
     public void deveriaLancarExcecaoAoSacarValorMaiorQueSaldo() {
-        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria(1000).sacar(1500));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria(1000).sacar(1500));
     }
 
     @Test
@@ -75,6 +75,53 @@ public class ContaBancariaTest {
         contaDeSicrano.transferir(contaDeFulano, 500);
 
         assertEquals(500, contaDeFulano.consultarSaldo());
+    }
+
+    @Test
+    public void deveriaLancarExcecaoAoTransferirValorNegativo() {
+        try {
+
+            ContaBancaria contaDeSicrano = new ContaBancaria(800);
+            ContaBancaria contaDeFulano = new ContaBancaria();
+
+            contaDeSicrano.transferir(contaDeFulano, -500);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+        }
+    }
+
+    @Test
+    public void deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo() {
+        try {
+
+            ContaBancaria contaDeSicrano = new ContaBancaria(800);
+            ContaBancaria contaDeFulano = new ContaBancaria();
+
+            contaDeSicrano.transferir(contaDeFulano, 1000);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+        }
+    }
+
+    @Test
+    public void deveriaLancarExcecaoAoTransferirParaMesmaConta() {
+        try {
+
+            ContaBancaria contaDeSicrano = new ContaBancaria(800);
+
+            contaDeSicrano.transferir(contaDeSicrano, 800);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+        }
     }
 
 }

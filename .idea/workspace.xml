@@ -48,7 +48,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ContaBancariaTest.deveriaTransferir500ParaContaDeFulano">
+  <component name="RunManager" selected="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta">
     <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
@@ -64,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.deveriaDiminuirSaldoAoSacar400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
@@ -74,13 +74,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
       <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaDiminuirSaldoAoSacar400" />
+      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoTransferirParaMesmaConta" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoDepositar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +90,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
       <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoDepositar" />
+      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.deveriaLancarMensagemCorretaAoDepositar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +106,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
       <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaLancarMensagemCorretaAoDepositar" />
+      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoTransferirValorNegativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorNegativo" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaTransferir500ParaContaDeFulano" />
         <item itemvalue="JUnit.ContaBancariaTest" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaDiminuirSaldoAoSacar400" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarMensagemCorretaAoDepositar" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoDepositar" />
       </list>
     </recent_temporary>
   </component>
