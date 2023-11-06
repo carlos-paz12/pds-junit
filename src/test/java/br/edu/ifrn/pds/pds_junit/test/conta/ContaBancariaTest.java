@@ -14,4 +14,12 @@ public class ContaBancariaTest {
         assertEquals(1000, contaBancaria.consultarSaldo());
     }
 
+    @Test
+    public void deveriaDepositar1000() {
+        ContaBancaria contaBancaria = new ContaBancaria(1000);
+        contaBancaria.depositar(1000);
+
+        assertEquals(2000, contaBancaria.consultarSaldo());
+    }
+
 }
