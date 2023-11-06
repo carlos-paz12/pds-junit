@@ -4,6 +4,7 @@ import br.edu.ifrn.pds.pds_junit.calculadora.Calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculadoraTest {
 
@@ -33,6 +34,11 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
 
         assertEquals(3, calculadora.dividir(9, 3));
+    }
+
+    @Test
+    public void deveriaLancarArithmeticException() {
+        assertThrows(ArithmeticException.class, () -> new Calculadora().dividir(10, 0));
     }
 
 }
