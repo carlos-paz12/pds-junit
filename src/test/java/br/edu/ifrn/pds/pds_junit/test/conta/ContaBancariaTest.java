@@ -4,6 +4,7 @@ import br.edu.ifrn.pds.pds_junit.conta.ContaBancaria;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ContaBancariaTest {
 
@@ -20,6 +21,11 @@ public class ContaBancariaTest {
         contaBancaria.depositar(1000);
 
         assertEquals(2000, contaBancaria.consultarSaldo());
+    }
+
+    @Test
+    public void deveriaLancarExcecaoAoDepositar() {
+        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria ().depositar(-20));
     }
 
 }
