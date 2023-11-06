@@ -9,14 +9,14 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaRetornarSaldoDe1000() {
-        ContaBancaria contaBancaria = new ContaBancaria(1000);
+        ContaBancaria contaBancaria = new ContaBancaria("123.456.789-00", 1000);
 
         assertEquals(1000, contaBancaria.consultarSaldo());
     }
 
     @Test
     public void deveriaDepositar1000() {
-        ContaBancaria contaBancaria = new ContaBancaria(1000);
+        ContaBancaria contaBancaria = new ContaBancaria("123.456.789-00", 1000);
         contaBancaria.depositar(1000);
 
         assertEquals(2000, contaBancaria.consultarSaldo());
@@ -24,14 +24,14 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaLancarExcecaoAoDepositar() {
-        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria().depositar(-20));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria("123.456.789-00", 1000).depositar(-20));
     }
 
     @Test
     public void deveriaLancarMensagemCorretaAoDepositar() {
         try {
 
-            new ContaBancaria(1000).depositar(-50);
+            new ContaBancaria("123.456.789-00", 1000).depositar(-50);
 
             fail("Não lançou exceção correta");
 
@@ -44,14 +44,14 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaSacar400() {
-        ContaBancaria contaBancaria = new ContaBancaria(1000);
+        ContaBancaria contaBancaria = new ContaBancaria("123.456.789-00", 1000);
 
         assertEquals(400, contaBancaria.sacar(400));
     }
 
     @Test
     public void deveriaDiminuirSaldoAoSacar400() {
-        ContaBancaria contaBancaria = new ContaBancaria(800);
+        ContaBancaria contaBancaria = new ContaBancaria("123.456.789-00", 800);
         contaBancaria.sacar(400);
 
         assertEquals(400, contaBancaria.consultarSaldo());
@@ -59,32 +59,32 @@ public class ContaBancariaTest {
 
     @Test
     public void deveriaLancarExcecaoAoSacarValorNegativo() {
-        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria(1000).sacar(-40));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria("123.456.789-00", 1000).sacar(-40));
     }
 
     @Test
     public void deveriaLancarExcecaoAoSacarValorMaiorQueSaldo() {
-        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria(1000).sacar(1500));
+        assertThrows(IllegalArgumentException.class, () -> new ContaBancaria("123.456.789-00", 1000).sacar(1500));
     }
 
     @Test
-    public void deveriaTransferir500ParaContaDeFulano() {
-        ContaBancaria contaDeSicrano = new ContaBancaria(800);
-        ContaBancaria contaDeFulano = new ContaBancaria();
+    public void deveriaTransferir500ParaConta2() {
+        ContaBancaria conta1 = new ContaBancaria("123.456.789-00", 800);
+        ContaBancaria conta2 = new ContaBancaria("987.654.321-00", 400);
 
-        contaDeSicrano.transferir(contaDeFulano, 500);
+        conta1.transferir(conta2, 500);
 
-        assertEquals(500, contaDeFulano.consultarSaldo());
+        assertEquals(900, conta2.consultarSaldo());
     }
 
     @Test
     public void deveriaLancarExcecaoAoTransferirValorNegativo() {
         try {
 
-            ContaBancaria contaDeSicrano = new ContaBancaria(800);
-            ContaBancaria contaDeFulano = new ContaBancaria();
+            ContaBancaria conta1 = new ContaBancaria("123.456.789-00", 800);
+            ContaBancaria conta2 = new ContaBancaria("987.654.321-00", 400);
 
-            contaDeSicrano.transferir(contaDeFulano, -500);
+            conta1.transferir(conta2, -500);
 
             fail("Não lançou exceção correta");
 
@@ -97,10 +97,10 @@ public class ContaBancariaTest {
     public void deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo() {
         try {
 
-            ContaBancaria contaDeSicrano = new ContaBancaria(800);
-            ContaBancaria contaDeFulano = new ContaBancaria();
+            ContaBancaria conta1 = new ContaBancaria("123.456.789-00", 800);
+            ContaBancaria conta2 = new ContaBancaria("987.654.321-00", 400);
 
-            contaDeSicrano.transferir(contaDeFulano, 1000);
+            conta1.transferir(conta2, 1000);
 
             fail("Não lançou exceção correta");
 
@@ -113,9 +113,9 @@ public class ContaBancariaTest {
     public void deveriaLancarExcecaoAoTransferirParaMesmaConta() {
         try {
 
-            ContaBancaria contaDeSicrano = new ContaBancaria(800);
+            ContaBancaria conta1 = new ContaBancaria("123.456.789-00", 800);
 
-            contaDeSicrano.transferir(contaDeSicrano, 800);
+            conta1.transferir(conta1, 800);
 
             fail("Não lançou exceção correta");
 
