@@ -3,8 +3,7 @@ package br.edu.ifrn.pds.pds_junit.test.conta;
 import br.edu.ifrn.pds.pds_junit.conta.ContaBancaria;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ContaBancariaTest {
 
@@ -26,6 +25,21 @@ public class ContaBancariaTest {
     @Test
     public void deveriaLancarExcecaoAoDepositar() {
         assertThrows(IllegalArgumentException.class,() -> new ContaBancaria ().depositar(-20));
+    }
+
+    @Test
+    public void deveriaLancarMensagemCorretaAoDepositar() {
+        try {
+
+            new ContaBancaria(1000).depositar(-50);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+            assertEquals("Impossível realização operação com valor menor ou igual a zero...", e.getMessage());
+
+        }
     }
 
 }
