@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9022f302-5279-4897-aaba-688f3870921b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/calculadora/CalculadoraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/calculadora/CalculadoraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/calculadora/CalculadoraTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CalculadoraTest.deveriaSubtrair5De10">
     <configuration name="CalculadoraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
@@ -63,8 +63,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculadoraTest.deveriaSubtrair5De10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pds-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.calculadora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.calculadora" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.calculadora.CalculadoraTest" />
+      <option name="METHOD_NAME" value="deveriaSubtrair5De10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculadoraTest.deveriaSubtrair5De10" />
         <item itemvalue="JUnit.CalculadoraTest" />
       </list>
     </recent_temporary>

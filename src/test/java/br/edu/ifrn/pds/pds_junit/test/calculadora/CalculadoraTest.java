@@ -14,4 +14,11 @@ public class CalculadoraTest {
         assertEquals(3, calculadora.somar(1, 2));
     }
 
+    @Test
+    public void deveriaSubtrair5De10() {
+        Calculadora calculadora = new Calculadora();
+
+        assertEquals(5, calculadora.subtrair(10, 5));
+    }
+
 }
