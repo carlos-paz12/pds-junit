@@ -7,10 +7,8 @@ public class ContaBancaria {
     private String cpfTitular;
     private float saldo;
 
-    public ContaBancaria() {
-    }
-
-    public ContaBancaria(float saldo) {
+    public ContaBancaria(String cpfTitular, float saldo) {
+        this.cpfTitular = cpfTitular;
         this.saldo = saldo;
     }
 
