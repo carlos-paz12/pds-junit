@@ -1,7 +1,10 @@
 package br.edu.ifrn.pds.pds_junit.conta;
 
+import java.util.Objects;
+
 public class ContaBancaria {
 
+    private String cpfTitular;
     private float saldo;
 
     public ContaBancaria() {
@@ -48,6 +51,19 @@ public class ContaBancaria {
     private void verificarSeMaiorQueSaldo(float valor) {
         if (valor > saldo)
             throw new IllegalArgumentException("Impossível realização operação com valor maior que o saldo em conta...");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        ContaBancaria that = (ContaBancaria) o;
+
+        return cpfTitular.equals(that.cpfTitular);
     }
 
 }
