@@ -21,4 +21,11 @@ public class CalculadoraTest {
         assertEquals(5, calculadora.subtrair(10, 5));
     }
 
+    @Test
+    public void deveriaMultiplicar8E4() {
+        Calculadora calculadora = new Calculadora();
+
+        assertEquals(32, calculadora.multiplicar(8, 4));
+    }
+
 }
