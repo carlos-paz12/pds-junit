@@ -67,4 +67,14 @@ public class ContaBancariaTest {
         assertThrows(IllegalArgumentException.class,() -> new ContaBancaria(1000).sacar(1500));
     }
 
+    @Test
+    public void deveriaTransferir500ParaContaDeFulano() {
+        ContaBancaria contaDeSicrano = new ContaBancaria(800);
+        ContaBancaria contaDeFulano = new ContaBancaria();
+
+        contaDeSicrano.transferir(contaDeFulano, 500);
+
+        assertEquals(500, contaDeFulano.consultarSaldo());
+    }
+
 }

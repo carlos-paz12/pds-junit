@@ -48,7 +48,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ContaBancariaTest">
+  <component name="RunManager" selected="JUnit.ContaBancariaTest.deveriaTransferir500ParaContaDeFulano">
     <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
@@ -60,22 +60,6 @@
       <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
       <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaBancariaTest.deveriaDepositar1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pds-junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.conta.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
-      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaDepositar1000" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,13 +112,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContaBancariaTest.deveriaTransferir500ParaContaDeFulano" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pds-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.conta.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveriaTransferir500ParaContaDeFulano" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaBancariaTest.deveriaTransferir500ParaContaDeFulano" />
         <item itemvalue="JUnit.ContaBancariaTest" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaDiminuirSaldoAoSacar400" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarMensagemCorretaAoDepositar" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoDepositar" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaDepositar1000" />
       </list>
     </recent_temporary>
   </component>
