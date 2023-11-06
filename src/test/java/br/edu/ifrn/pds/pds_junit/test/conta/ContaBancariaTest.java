@@ -42,4 +42,19 @@ public class ContaBancariaTest {
         }
     }
 
+    @Test
+    public void deveriaSacar400() {
+        ContaBancaria contaBancaria = new ContaBancaria(1000);
+
+        assertEquals(400, contaBancaria.sacar(400));
+    }
+
+    @Test
+    public void deveriaDiminuirSaldoAoSacar400() {
+        ContaBancaria contaBancaria = new ContaBancaria(800);
+        contaBancaria.sacar(400);
+
+        assertEquals(400, contaBancaria.consultarSaldo());
+    }
+
 }
