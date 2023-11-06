@@ -57,4 +57,14 @@ public class ContaBancariaTest {
         assertEquals(400, contaBancaria.consultarSaldo());
     }
 
+    @Test
+    public void deveriaLancarExcecaoAoSacarValorNegativo() {
+        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria(1000).sacar(-40));
+    }
+
+    @Test
+    public void deveriaLancarExcecaoAoSacarValorMaiorQueSaldo() {
+        assertThrows(IllegalArgumentException.class,() -> new ContaBancaria(1000).sacar(1500));
+    }
+
 }
