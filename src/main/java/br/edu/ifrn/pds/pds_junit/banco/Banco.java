@@ -2,37 +2,43 @@ package br.edu.ifrn.pds.pds_junit.banco;
 
 public class Banco {
 
-    public void solicitarEmprestimo(float valorEmprestimo, float taxaJuros) {
+    public Emprestimo solicitarEmprestimo(float valorEmprestimo, float taxaJuros) {
+        if (taxaJuros <= 0 || taxaJuros > 100)
+            throw new IllegalArgumentException("Taxa de juros inválida.");
+
+        int parcelas = 0;
+
         if (valorEmprestimo >= 3000 && valorEmprestimo <= 8000) {
 
-            // TODO
+            parcelas = 12;
 
         }
         else if (valorEmprestimo > 8000 && valorEmprestimo <= 25000) {
 
-            // TODO
+            parcelas = 36;
 
         }
         else if (valorEmprestimo > 25000 && valorEmprestimo <= 50000) {
 
-            // TODO
+            parcelas = 60;
 
         }
         else if (valorEmprestimo > 50000 && valorEmprestimo <= 150000) {
 
-            // TODO
+            parcelas = 120;
 
         }
-    }
+        else {
 
-    public int mesesParcelados() {
-        // TODO
-        return 0;
-    }
+            throw new IllegalArgumentException("Valor de empréstimo inválido.");
 
-    public float valorParcela() {
-        // TODO
-        return 0;
+        }
+
+        float valorParcela = valorEmprestimo / parcelas + taxaJuros;
+
+        Emprestimo emprestimo = new Emprestimo(valorParcela, parcelas);
+
+        return emprestimo;
     }
 
 }
