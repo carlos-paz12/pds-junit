@@ -1,5 +1,7 @@
 package br.edu.ifrn.pds.pds_junit.banco;
 
+import java.util.Objects;
+
 public class Emprestimo {
 
     private float valorTotal, taxaJuros, valorParcela;
@@ -26,6 +28,18 @@ public class Emprestimo {
 
     public int getQtdParcelas() {
         return qtdParcelas;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        Emprestimo that = (Emprestimo) o;
+        return Float.compare(that.valorTotal, valorTotal) == 0 && Float.compare(that.taxaJuros, taxaJuros) == 0 && Float.compare(that.valorParcela, valorParcela) == 0 && qtdParcelas == that.qtdParcelas;
     }
 
 }
