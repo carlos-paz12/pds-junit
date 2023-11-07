@@ -36,9 +36,9 @@ public class Banco {
 
         float valorParcela = valorEmprestimo / parcelas + taxaJuros;
 
-        Emprestimo emprestimo = new Emprestimo(valorParcela, parcelas);
+        Emprestimo emprestimoSolicitado = new Emprestimo(valorEmprestimo, taxaJuros, valorParcela, parcelas);
 
-        return emprestimo;
+        return emprestimoSolicitado;
     }
 
 }

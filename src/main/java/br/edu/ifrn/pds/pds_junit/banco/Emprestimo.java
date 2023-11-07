@@ -2,12 +2,22 @@ package br.edu.ifrn.pds.pds_junit.banco;
 
 public class Emprestimo {
 
-    private float valorParcela;
+    private float valorTotal, taxaJuros, valorParcela;
     private int qtdParcelas;
 
-    public Emprestimo(float valorParcela, int qtdParcelas) {
+    public Emprestimo(float valorTotal, float taxaJuros, float valorParcela, int qtdParcelas) {
+        this.valorTotal = valorTotal;
+        this.taxaJuros = taxaJuros;
         this.valorParcela = valorParcela;
         this.qtdParcelas = qtdParcelas;
+    }
+
+    public float getValorTotal() {
+        return valorTotal;
+    }
+
+    public float getTaxaJuros() {
+        return taxaJuros;
     }
 
     public float getValorParcela() {
