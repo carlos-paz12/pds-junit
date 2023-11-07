@@ -32,17 +32,14 @@ public class Emprestimo {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
-            return true;
-
-        if (o == null || getClass() != o.getClass())
+        if (!(o instanceof Emprestimo))
             return false;
 
         Emprestimo that = (Emprestimo) o;
-        return Float.compare(that.valorTotal, valorTotal) == 0 &&
-               Float.compare(that.taxaJurosDecimal, taxaJurosDecimal) == 0 &&
-               Float.compare(that.valorParcela, valorParcela) == 0 &&
-               qtdParcelas == that.qtdParcelas;
+        return that.valorTotal == valorTotal &&
+               that.taxaJurosDecimal == taxaJurosDecimal &&
+               that.valorParcela == valorParcela &&
+               that.qtdParcelas == qtdParcelas;
     }
 
 }
