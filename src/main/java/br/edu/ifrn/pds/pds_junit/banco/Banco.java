@@ -36,7 +36,7 @@ public class Banco {
         }
 
         float valorParcela = valorEmprestimo / parcelas + taxaJurosDecimal;
-        return new Emprestimo(valorEmprestimo, taxaJurosPorcentagem, valorParcela, parcelas);
+        return new Emprestimo(valorEmprestimo, taxaJurosDecimal, valorParcela, parcelas);
     }
 
 }

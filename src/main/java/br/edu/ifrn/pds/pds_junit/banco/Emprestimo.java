@@ -4,12 +4,12 @@ import java.util.Objects;
 
 public class Emprestimo {
 
-    private float valorTotal, taxaJuros, valorParcela;
+    private float valorTotal, taxaJurosDecimal, valorParcela;
     private int qtdParcelas;
 
-    public Emprestimo(float valorTotal, float taxaJuros, float valorParcela, int qtdParcelas) {
+    public Emprestimo(float valorTotal, float taxaJurosDecimal, float valorParcela, int qtdParcelas) {
         this.valorTotal = valorTotal;
-        this.taxaJuros = taxaJuros;
+        this.taxaJurosDecimal = taxaJurosDecimal;
         this.valorParcela = valorParcela;
         this.qtdParcelas = qtdParcelas;
     }
@@ -18,8 +18,8 @@ public class Emprestimo {
         return valorTotal;
     }
 
-    public float getTaxaJuros() {
-        return taxaJuros;
+    public float getTaxaJurosDecimal() {
+        return taxaJurosDecimal;
     }
 
     public float getValorParcela() {
@@ -39,7 +39,10 @@ public class Emprestimo {
             return false;
 
         Emprestimo that = (Emprestimo) o;
-        return Float.compare(that.valorTotal, valorTotal) == 0 && Float.compare(that.taxaJuros, taxaJuros) == 0 && Float.compare(that.valorParcela, valorParcela) == 0 && qtdParcelas == that.qtdParcelas;
+        return Float.compare(that.valorTotal, valorTotal) == 0 &&
+               Float.compare(that.taxaJurosDecimal, taxaJurosDecimal) == 0 &&
+               Float.compare(that.valorParcela, valorParcela) == 0 &&
+               qtdParcelas == that.qtdParcelas;
     }
 
 }
