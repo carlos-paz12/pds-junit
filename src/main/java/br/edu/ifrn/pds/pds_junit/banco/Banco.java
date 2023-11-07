@@ -2,10 +2,11 @@ package br.edu.ifrn.pds.pds_junit.banco;
 
 public class Banco {
 
-    public Emprestimo solicitarEmprestimo(float valorEmprestimo, float taxaJuros) {
-        if (taxaJuros <= 0 || taxaJuros > 100)
+    public Emprestimo solicitarEmprestimo(float valorEmprestimo, float taxaJurosPorcentagem) {
+        if (taxaJurosPorcentagem <= 0 || taxaJurosPorcentagem > 100)
             throw new IllegalArgumentException("Taxa de juros inválida.");
 
+        float taxaJurosDecimal = taxaJurosPorcentagem / 100;
         int parcelas = 0;
 
         if (valorEmprestimo >= 3000 && valorEmprestimo <= 8000) {
@@ -34,11 +35,8 @@ public class Banco {
 
         }
 
-        float valorParcela = valorEmprestimo / parcelas + taxaJuros;
-
-        Emprestimo emprestimoSolicitado = new Emprestimo(valorEmprestimo, taxaJuros, valorParcela, parcelas);
-
-        return emprestimoSolicitado;
+        float valorParcela = valorEmprestimo / parcelas + taxaJurosDecimal;
+        return new Emprestimo(valorEmprestimo, taxaJurosPorcentagem, valorParcela, parcelas);
     }
 
 }
