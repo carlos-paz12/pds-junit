@@ -34,9 +34,11 @@ public class Banco {
             throw new IllegalArgumentException("Valor de empréstimo inválido.");
 
         }
+        float valorParcela = valorEmprestimo / parcelas;
+        float jurosParcela = valorParcela * taxaJurosDecimal;
+        float valorTotalParcela = valorParcela + jurosParcela;
 
-        float valorParcela = valorEmprestimo / parcelas + taxaJurosDecimal;
-        return new Emprestimo(valorEmprestimo, taxaJurosDecimal, valorParcela, parcelas);
+        return new Emprestimo(valorEmprestimo, taxaJurosDecimal, valorTotalParcela, parcelas);
     }
 
 }
