@@ -45,4 +45,50 @@ public class BancoTest {
         assertEquals(emprestimoEsperado, emprestimo);
     }
 
+    @Test
+    public void deveriaRetornarExcecaoDeValorInvalido() {
+        try {
+
+            new Banco().solicitarEmprestimo(2500, 2);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+            assertEquals("Valor de empréstimo inválido.", e.getMessage());
+
+        }
+    }
+
+
+    @Test
+    public void deveriaRetornarExcecaoDeJurosNegativo() {
+        try {
+
+            new Banco().solicitarEmprestimo(5000, -2);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+            assertEquals("Taxa de juros inválida.", e.getMessage());
+
+        }
+    }
+
+    @Test
+    public void deveriaRetornarEExcecaoDeJurosIgualZero() {
+        try {
+
+            new Banco().solicitarEmprestimo(5000, 0);
+
+            fail("Não lançou exceção correta");
+
+        } catch (IllegalArgumentException e) {
+
+            assertEquals("Taxa de juros inválida.", e.getMessage());
+
+        }
+    }
+
 }
