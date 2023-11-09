@@ -3,7 +3,7 @@ package br.edu.ifrn.pds.pds_junit.banco;
 public class Banco {
 
     public Emprestimo solicitarEmprestimo(float valorEmprestimo, float taxaJurosPorcentagem) {
-        if (taxaJurosPorcentagem <= 0 || taxaJurosPorcentagem > 100)
+        if (taxaJurosPorcentagem <= 0)
             throw new IllegalArgumentException("Taxa de juros inválida.");
 
         float taxaJurosDecimal = taxaJurosPorcentagem / 100;

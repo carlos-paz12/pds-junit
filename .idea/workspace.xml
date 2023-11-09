@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9022f302-5279-4897-aaba-688f3870921b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/banco/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/banco/BancoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/20201114010055/Documents/IntelliJProjects/pds-junit",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/20201114010055/Documents/IntelliJProjects/pds-junit&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.BancoTest.deveriaRetornarEmprestimoValido">
+}</component>
+  <component name="RunManager" selected="JUnit.BancoTest">
+    <configuration name="BancoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pds-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.banco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BancoTest.deveriaRetornarEmprestimoValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
@@ -112,29 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pds-junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.conta.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
-      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoTransferirValorNegativo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BancoTest" />
         <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValido" />
         <item itemvalue="JUnit.ContaBancariaTest" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta" />
         <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorMaiorQueSaldo" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirValorNegativo" />
       </list>
     </recent_temporary>
   </component>
