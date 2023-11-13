@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9022f302-5279-4897-aaba-688f3870921b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifrn/pds/pds_junit/banco/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifrn/pds/pds_junit/banco/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/banco/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ifrn/pds/pds_junit/test/banco/BancoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +28,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -38,32 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/20201114010055/Documents/IntelliJProjects/pds-junit&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/20201114010055/Documents/IntelliJ/pds-junit",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.BancoTest.deveriaRetornarEmprestimoValido">
-    <configuration name="BancoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pds-junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.banco.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
-      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="JUnit.BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe50000">
     <configuration name="BancoTest.deveriaRetornarEmprestimoValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
@@ -80,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BancoTest.deveriaRetornarEmprestimoValidoo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe25000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
@@ -90,38 +82,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
       <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
-      <option name="METHOD_NAME" value="deveriaRetornarEmprestimoValidoo" />
+      <option name="METHOD_NAME" value="deveriaRetornarEmprestimoValidoComValorAcimaDe25000" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe50000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.conta.*" />
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.banco.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
-      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
+      <option name="METHOD_NAME" value="deveriaRetornarEmprestimoValidoComValorAcimaDe50000" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe8000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pds-junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.conta.*" />
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.banco.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta" />
-      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.conta.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="deveriaLancarExcecaoAoTransferirParaMesmaConta" />
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
+      <option name="METHOD_NAME" value="deveriaRetornarEmprestimoValidoComValorAcimaDe8000" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaOuIgual3000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pds-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.ifrn.pds.pds_junit.test.banco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco" />
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifrn.pds.pds_junit.test.banco.BancoTest" />
+      <option name="METHOD_NAME" value="deveriaRetornarEmprestimoValidoComValorAcimaOuIgual3000" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe50000" />
+        <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe25000" />
+        <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaDe8000" />
+        <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValidoComValorAcimaOuIgual3000" />
         <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValido" />
-        <item itemvalue="JUnit.BancoTest.deveriaRetornarEmprestimoValidoo" />
-        <item itemvalue="JUnit.BancoTest" />
-        <item itemvalue="JUnit.ContaBancariaTest" />
-        <item itemvalue="JUnit.ContaBancariaTest.deveriaLancarExcecaoAoTransferirParaMesmaConta" />
       </list>
     </recent_temporary>
   </component>

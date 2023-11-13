@@ -6,7 +6,6 @@ public class Banco {
         if (taxaJurosPorcentagem <= 0)
             throw new IllegalArgumentException("Taxa de juros inválida.");
 
-        float taxaJurosDecimal = taxaJurosPorcentagem / 100;
         int parcelas = 0;
 
         if (valorEmprestimo >= 3000 && valorEmprestimo <= 8000) {
@@ -34,9 +33,14 @@ public class Banco {
             throw new IllegalArgumentException("Valor de empréstimo inválido.");
 
         }
+
+        float taxaJurosDecimal = taxaJurosPorcentagem / 100;
+
         float valorParcela = valorEmprestimo / parcelas;
-        float jurosParcela = valorParcela * taxaJurosDecimal;
-        float valorTotalParcela = valorParcela + jurosParcela;
+
+        float juros = valorEmprestimo * taxaJurosDecimal;
+
+        float valorTotalParcela = valorParcela + juros;
 
         return new Emprestimo(valorEmprestimo, taxaJurosDecimal, valorTotalParcela, parcelas);
     }
